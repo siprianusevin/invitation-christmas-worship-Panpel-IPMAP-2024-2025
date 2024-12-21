@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PANPEL IPMAP JAKARTA</title>
+    <link rel="stylesheet" href="pages.css" />
+  </head>
+  <body>
+    <!-- HOME PAGE -->
+    <!-- Video latar belakang -->
+    <video id="backgroundVideo" autoplay loop muted>
+      <source src="video/hompageVid2.mp4" type="video/mp4" />
+      Your browser does not support the video element.
+    </video>
+    <!-- Ikon Foto Card -->
+    <div class="window">
+      <div class="profile-card">
+        <img
+          src="ImageAsetNatal/logo panitia.jpg"
+          alt="Foto Profil"
+          class="profile-photo"
+        />
+        <h4>NATAL IPMAP SE-JAWA DAN BALI</h4>
+        <h5 style="color: whitesmoke">
+          <!-- Opening: Typing Effect -->
+          <div id="opening"></div>
+        </h5>
+      </div>
+      <div class="button-container" id="button-container" style="display: none">
+        <button onclick="openPage('invinition.html')">Buka Undangan</button>
+      </div>
+    </div>
+
+    <!-- Audio Section -->
+    <audio id="backgroundAudio" autoplay loop>
+      <source src="audio/holy Night.Mp3" type="audio/mp3" />
+      Your browser does not support the audio element.
+    </audio>
+
+    <!-- Script -->
+    <script>
+      // Teks untuk efek mengetik
+      const texts = [
+        "Yth: Kepada 9 BPKW IPMAP Se-Jawa dan Bali,",
+        "Dengan Penuh sukacita kami,",
+        " panitia Natal,",
+        "mengundang saudara",
+        "/i untuk, bergabung bersama kami dalam Ibadah Perayaan Natal bersama IPMAP!",
+        "Merry Christmas!",
+      ];
+
+      const openingElement = document.getElementById("opening");
+      const buttonContainer = document.getElementById("button-container");
+      let textIndex = 0;
+      let charIndex = 0;
+
+      function typeEffect() {
+        if (textIndex < texts.length) {
+          if (charIndex < texts[textIndex].length) {
+            openingElement.textContent += texts[textIndex][charIndex];
+            charIndex++;
+            setTimeout(typeEffect, 200);
+          } else {
+            textIndex++;
+            charIndex = 0;
+            openingElement.innerHTML += "<br>";
+            setTimeout(typeEffect, 500);
+          }
+        } else {
+          setTimeout(() => {
+            buttonContainer.style.display = "block";
+          }, 500);
+        }
+      }
+
+      // Mulai efek mengetik saat halaman dimuat
+      window.onload = function () {
+        typeEffect();
+        const audioElement = document.getElementById("backgroundAudio");
+
+        // Cegah audio berhenti saat berpindah halaman
+        if (sessionStorage.getItem("isAudioPlaying") !== "true") {
+          audioElement.play();
+          sessionStorage.setItem("isAudioPlaying", "true");
+        }
+      };
+
+      function openPage(url) {
+        window.location.href = url;
+      }
+    </script>
+    <script src="Pages.js"></script>
+  </body>
+</html>

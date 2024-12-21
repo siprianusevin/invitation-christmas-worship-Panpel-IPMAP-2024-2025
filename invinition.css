@@ -1,0 +1,769 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: #7b0f0f;
+  /* Warna dasar seperti gambar */
+  color: white;
+  margin: 0;
+  font-family: Arial, sans-serif;
+
+}
+
+
+/* Awalan Css untuk HomePage 1 Pohon Natal */
+.container {
+  position: relative;
+  text-align: center;
+  padding: 50px;
+}
+
+.title1 {
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: 5px;
+  margin: 0;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+  border-color: #611C35;
+  color: #7b0f0f;
+  text-decoration: underline;
+}
+
+.saya {
+  color: brown;
+  text-shadow: #4b79a1;
+  text-decoration: solid;
+  text-decoration: underline, yellow;
+  text-align: center;
+  color: #87CEEB;
+}
+
+.subtitle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  font-weight: bold;
+  color: gold;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+}
+
+/* Pohon Natal */
+.tree-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.tree {
+  width: 150px;
+  height: auto;
+  animation: bounce 3s infinite;
+}
+
+/* Paragraf */
+.justify-text {
+  text-align: center;
+  margin: 20px auto;
+  width: 80%;
+  line-height: 1.6;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px hsla(0, 0%, 0%, 0.769);
+}
+
+.title1 {
+  margin-top: -110px;
+  /* Geser ke atas elemen SUBTHEMA */
+}
+
+/* Akiran Css untuk HomePage 1 Pohon Natal */
+
+.home-section {
+  background-color: #283e51;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  padding: 50px;
+}
+
+.home-section {
+  text-align: center;
+  color: #611C35;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#location {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 100px;
+  background-color: #611C35;
+  background-size: cover;
+  /* Memastikan gambar menutupi seluruh area */
+  background-position: center center;
+  /* Menjaga gambar tetap terpusat */
+  color: white;
+  font-family: 'Georgia', serif;
+  height: 100vh;
+  width: 100vw;
+  /* Memastikan elemen memiliki lebar penuh */
+}
+
+#location h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+  text-decoration: underline;
+
+}
+
+#location p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.map-container {
+  width: 90%;
+  /* Sesuaikan lebar default */
+  max-width: 800px;
+  /* Batas lebar maksimum */
+  height: 450px;
+  /* Tinggi tetap */
+  margin: 20px auto 0;
+  /* Atur jarak atas dengan margin-top */
+  border-radius: 15px;
+  /* Sudut membulat */
+  overflow: hidden;
+  /* Hilangkan konten yang keluar */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  /* Bayangan */
+  position: relative;
+  /* Untuk mempermudah kontrol */
+  top: -50px;
+  /* Mengangkat posisi peta ke atas */
+}
+
+.map-container iframe {
+  width: 100%;
+  /* Sesuaikan lebar iframe dengan container */
+  height: 100%;
+  /* Sesuaikan tinggi iframe dengan container */
+  border: none;
+  /* Hapus border iframe */
+}
+
+#schedule {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 100px;
+  background-color: #611C35;
+  background-size: cover;
+  /* Memastikan gambar menutupi seluruh area */
+  background-position: center center;
+  /* Menjaga gambar tetap terpusat */
+  height: 100vh;
+  width: 100vw;
+  /* Memastikan elemen memiliki lebar penuh */
+}
+
+.menu__item {
+  cursor: pointer;
+  transition: transform 0.3s;
+
+}
+
+.menu__item:hover {
+  transform: scale(1.1);
+}
+
+.card {
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+iframe {
+  width: 100%;
+  height: 300px;
+}
+
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  counter-reset: #c456c4;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  text-align: center;
+  animation: fadeIn 1s ease;
+}
+
+section img {
+  width: 100%;
+  height: auto;
+  max-height: 100vh;
+  object-fit: cover;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+
+.image-container {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-container:hover {
+  transform: scale(1.1);
+}
+
+.image-box {
+  width: 100%;
+  height: 100%;
+}
+
+.image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.image-container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.image-container:hover {
+  animation: zoomEffect 0.8s ease-in-out forwards;
+}
+
+@keyframes zoomEffect {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+
+  50% {
+    transform: scale(1.2) rotate(2deg);
+  }
+
+  100% {
+    transform: scale(1.1) rotate(0deg);
+  }
+}
+
+/* Navbar Style */
+nav.menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #fff;
+  /* Warna latar belakang putih */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* Bayangan halus */
+  padding: 10px;
+  border-radius: 10px;
+  /* Sudut melengkung */
+  z-index: 1000;
+  border-top: 2px solid #e2d1c3;
+  /* Garis batas atas */
+  transition: all 0.3s ease;
+  /* Efek transisi saat ada perubahan */
+}
+
+/* Menu Item Style */
+.menu__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  /* Warna teks yang lebih gelap */
+  position: relative;
+  /* Agar elemen inline bisa bergerak */
+  padding-inline-start: 10px;
+  color: brown;
+  text-shadow: #4b79a1;
+  text-decoration: solid;
+  text-decoration: underline, yellow;
+  background-color: #611C35;
+}
+
+/* Efek Hover pada Item */
+.menu__item:hover {
+  background: rgba(255, 255, 255, 0.7);
+  /* Efek transparan saat hover */
+  transform: scale(1.1);
+  /* Zoom effect saat hover */
+  color: #ffcd02;
+  /* Warna kuning cerah saat hover */
+}
+
+/* Menambahkan garis bawah animasi saat hover */
+.menu__item::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #ffcd02;
+  /* Garis bawah kuning cerah */
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Efek saat item aktif */
+.menu__item:active {
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  /* Memberikan efek transparan saat klik */
+  transform: scale(0.95);
+  /* Efek sedikit mengecil saat klik */
+  color: #ffcd02;
+  /* Warna saat item aktif */
+}
+
+/* Teks item saat hover */
+.menu__item:hover span {
+  font-weight: bold;
+  color: #ffcd02;
+  /* Warna teks berubah saat hover */
+}
+
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  padding: 20px;
+  box-sizing: border-box;
+  background: #611C35;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+
+}
+
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-radius: 10px;
+  border-color: #575965;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  padding: 20px;
+  box-sizing: border-box;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+
+}
+
+/* Gaya untuk Grid Item */
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-radius: 10px;
+  border-color: #575965;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+
+}
+
+/* Efek Hover pada Grid Item */
+.grid-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Gaya untuk gambar */
+.grid-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+
+}
+
+/* Gaya untuk nama dan keterangan */
+.name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  margin: 5px 0;
+}
+
+.role {
+  font-size: 1rem;
+  color: #777;
+  margin: 5px 0;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+}
+
+.carousel-control-prev:hover .carousel-control-prev-icon,
+.carousel-control-next:hover .carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* CSS tambahan untuk animasi Salju */
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.snowflake {
+  color: white;
+  font-size: 1.5em;
+  position: absolute;
+  top: -10%;
+  animation: fall 10s linear infinite;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+
+  100% {
+    transform: translateY(110vh) rotate(360deg);
+  }
+}
+
+/* CSS untuk Roadmap Section */
+
+/* Container untuk seluruh event */
+.timeline-container {
+  display: flex;
+  /* Tata letak horizontal */
+  justify-content: space-around;
+  /* Memberi jarak seimbang antar event */
+  align-items: stretch;
+  /* Semua item akan memiliki tinggi yang sama */
+  flex-wrap: nowrap;
+  /* Tidak ada pembungkusan ke baris baru */
+  padding: 20px;
+  gap: 20px;
+  /* Jarak antar event */
+  overflow-x: auto;
+  /* Scroll jika konten melebihi lebar layar */
+}
+
+/* Styling setiap event */
+.event {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 250px;
+  /* Lebar tetap */
+  min-height: 300px;
+  /* Tinggi minimum seragam */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* Meratakan konten di dalam event */
+  transition: transform 0.3s ease;
+}
+
+.event:hover {
+  transform: translateY(-10px);
+  /* Efek hover */
+}
+
+/* Judul Utama Timeline */
+.timeline-title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: #333;
+}
+
+/* Text styling di dalam event */
+.event h2 {
+  font-size: 1.2rem;
+  color: #9C1523;
+  margin-bottom: 10px;
+}
+
+.event h3 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.event p {
+  font-size: 0.9rem;
+  color: #666;
+  flex-grow: 1;
+  /* Memastikan paragraf mengisi ruang kosong */
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+  .timeline {
+    padding: 20px;
+  }
+
+  .timeline .event {
+    background: #f5f7fa;
+    margin: 15px 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .timeline-title {
+    font-size: 2em;
+  }
+
+  timeline .event h1 {
+    font-size: 1.5em;
+  }
+
+  .timeline .event p {
+    font-size: 1.2em;
+    color: #333;
+  }
+
+  .event h3 {
+    font-size: 1.3em;
+  }
+
+  .event p {
+    font-size: 1em;
+  }
+}
+
+/* acara H1 Awalan Coutdown*/
+/* Container Utama */
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* CSS untuk Countdown Container */
+.countdown-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.countdown-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.countdown-container h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.countdown {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.time-box {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  width: 120px;
+  text-align: center;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.time-box h2 {
+  font-size: 2.5rem;
+  margin: 0;
+  color: #f7b731;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.time-box p {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #f5f6fa;
+  font-weight: bold;
+}
+
+.time-box {
+  text-align: center;
+  font-size: 1.5em;
+  background: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-text {
+  font-size: 1.1em;
+  color: #333;
+}
+
+.time-box h2 {
+  font-size: 2.5rem;
+  margin: 0;
+  color: #f7b731;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.time-box p {
+  margin: 0;
+  font-size: 1.2rem;
+  color: brown;
+  font-weight: bold;
+}
+
+audio {
+  display: auto;
+}
+
+.waktu {
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: 5px;
+  margin: 0;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+  border-color: #611C35;
+  color: #f7b731;
+  text-decoration: underline;
+}
+
+.Hari {
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: 5px;
+  margin: 0;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+  border-color: #611C35;
+  color: #f7b731;
+  text-decoration: underline;
+}

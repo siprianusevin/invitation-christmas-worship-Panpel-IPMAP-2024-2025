@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>invitation Christmas Worship</title>
+    <link rel="stylesheet" href="invinition.css" />
+<link rel="stylesheet" href="9BpkwIpmap/REGISTRASI.css">
+<link rel="stylesheet" href="Slide.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+
+    <!-- Efek Salju -->
+    <div id="snowflakes">
+</div>
+    <!-- Home Section -->
+    <section id="home" class="home-section">
+<div class="container">
+<!-- Dekorasi Pohon Natal -->
+<i class="fa-solid fa-bell big-bell"></i>
+  <h1 class="title1">THEMA</h1>
+<p class="justify-text">
+  Sebab seorang anak telah lahir untuk kita, seorang putera telah diberikan untuk kita; lambang pemerintahan ada di atas bahunya, dan namanya disebutkan orang: Penasihat Ajaib, Allah yang Perkasa, Bapa yang Kekal, Raja Damai. (Yesaya 9:5)
+</p>
+</div>
+<div class="container">
+<i class="fa-solid fa-bell big-bell"></i>
+
+  <h1 class="title1">SUBTHEMA</h1>
+<p class="justify-text">
+  Melalui Perayaan Natal,Seminar,dan Tahun Baru.Ikatan Pelajar dan Mahasiswa Puncak (IPMAP) Se-Jawa dan Bali.
+Mencerminkan,Kebijaksanaan,Kedamaian,dan Keharmonisan Terhadap Kekuasaan Allah yang Luar Biasa.
+</p>
+</div>
+</div>
+    </section>
+    <!-- Acara Section " 1 Pembawa Firman Tuhan "-->
+<!-- Pdt 1 -->
+   <section id="Acara">
+      <div class="container">
+        <h1>DIMERAIKAN OLEH </h1>
+        <p>Pembawa Firma Tuhan</p>
+        <div class="gallery-container">
+          <div class="card">
+            <img src="Image Panita Natal/DR 1.Png" alt="Panitia" />
+            <div class="card-text">
+              <h4>Pendeta</h4>
+              <p>Pdt Dr. Ajan Tuai, M.Th.</p>
+            </div>
+          </div>
+<!-- Pdt 2 -->
+         <div class="card">
+            <img src="Image Panita Natal/pendeta1ERINUSKUM.Png" alt="Panitia" />
+            <div class="card-text">
+              <h4>Pendeta</h4>
+              <p>Erinus Kum</p>
+            </div>
+          </div>
+        </div>
+<!-- Akhir Acara Section " 1 Pembawa Firman Tuhan "-->
+<!-- Wl Singger -->
+<div class="container">
+        <h1>WORSHIP LEADER MUSIC</h1>
+        <p>SIGER</p>
+         <div class="grid-container">
+    <div class="grid-item">
+      <img src="Image Panita Natal/FitriAcara1.png" alt="Acara" class="grid-image">
+      <p class="name">Penyanyi</p>
+      <p class="role">Fitri Kogoya</p>
+    </div>
+    <div class="grid-item">
+      <img src="Image Panita Natal/Lanny.Png" alt="Musisi 1" class="grid-image">
+      <p class="name">Lanny</p>
+      <p class="role">Pemain Gitar</p>
+    </div>
+    <div class="grid-item">
+      <img src="Image Panita Natal/TenisOk1.png" alt="Musisi 2" class="grid-image">
+      <p class="name">Tenis </p>
+      <p class="role">Ritem gitar</p>
+    </div>
+    <div class="grid-item">
+      <img src="Image Panita Natal/Deris1.Png" alt="Musisi 3" class="grid-image">
+      <p class="name">Deris</p>
+      <p class="role">Pemain Bass</p>
+    </div>
+  </div>
+    </section>
+
+
+   <!-- Schedule Section -->
+     <!-- Bagian Countdown -->
+    <section id="schedule">
+        <h1 class="waktu">COUNTDOWN TIMER</h1>
+        <div class="countdown-container">
+            <div class="time-box">
+                <h2 id="days">00</h2>
+                <p>Days</p>
+            </div>
+            <div class="time-box">
+                <h2 id="hours">00</h2>
+                <p>Hours</p>
+            </div>
+            <div class="time-box">
+                <h2 id="minutes">00</h2>
+                <p>Minutes</p>
+            </div>
+            <div class="time-box">
+                <h2 id="seconds">00</h2>
+                <p>Seconds</p>
+            </div>
+        </div>
+
+        <!-- Bagian Hari -->
+        <h1 class="Hari">JADWAL KEGIATAN</h1>
+        <div class="countdown-container">
+            <div class="time-box">
+                <h2>30</h2>
+                <p>Senin</p>
+            </div>
+            <div class="time-box">
+                <h2>31</h2>
+                <p>Selasa</p>
+            </div>
+            <div class="time-box">
+                <h2>1</h2>
+                <p>Rabu</p>
+            </div>
+        </div>
+    </section>
+  <script>
+    // Target date
+    const targetDate = new Date('January 1, 2025 00:00:00').getTime();
+
+    // Update countdown every second
+    const countdownInterval = setInterval(() => {
+      const now = new Date().getTime();
+      const timeDifference = targetDate - now;
+
+      if (timeDifference > 0) {
+        const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+
+        document.getElementById('days').textContent = days;
+        document.getElementById('hours').textContent = hours;
+        document.getElementById('minutes').textContent = minutes;
+        document.getElementById('seconds').textContent = seconds;
+      } else {
+        clearInterval(countdownInterval);
+        document.body.innerHTML = '<h1>🎉 Happy New Year 2025! 🎉</h1>';
+      }
+    }, 1000);
+  </script>
+    </section>
+
+    <!-- Location Section -->
+<section id="location">
+  <h1><strong>LOKASI</strong></h1>
+<h1><strong>Villah Bogor Camp David Resort</strong></h1>
+  
+  <p><strong>KAMI MENATIKAN KEHADIRAN ANDA!</strong></p>
+  <div class="map-container">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d63406.504001773865!2d106.98394235227701!3d-6.658509494012731!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sVilla%20Bogor%20Camp%20David%20Resort!5e0!3m2!1sid!2sid!4v1734368085824!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      allowfullscreen="" 
+      loading="lazy">
+    </iframe>
+  </div>
+</section>
+
+
+    <!-- Gallery Section -->
+<section id="Image">
+ <!-- carousel -->
+    <div class="carousel">
+        <!-- list item -->
+        <div class="list">
+            <div class="item">
+                <img src="Dokumentasi Ngamen/Gambar8.Png">
+                <div class="content">
+                    <div class="author">IPMAP JAKARTA</div>
+                    <div class="title">NGAMEN LAMPU</div>
+                    <div class="topic">MERA</div>
+                    <div class="des">
+                       <p>Pengalangan Dan Natal IPMAP SE-JAWA DAN BALI</p>
+                    </div>
+                    <div class="buttons">
+                        <button>SEE</button>
+                        <button>MORE</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="Dokumentasi Ngamen/Gambar9.Png">
+                <div class="content">
+                    <div class="author">IPMAP JAKARTA</div>
+                    <div class="title">DERIS</div>
+                    <div class="topic">MURIB</div>
+                    <div class="des">
+                     
+                    </div>
+                    <div class="buttons">
+                        <button>SEE</button>
+                        <button>MORE</button>
+                    </div>
+                </div>
+            </div>
+ <div class="item">
+                <img src="Dokumentasi Ngamen/Gmbar5.Png">
+                <div class="content">
+                    <div class="author">IPMAP JAKARTA</div>
+                    <div class="title">SATRTIA</div>
+                    <div class="topic">KOGOYA</div>
+                    <div class="des">
+                      
+                    </div>
+                    <div class="buttons">
+                        <button>SEE</button>
+                        <button>MORE</button>
+                    </div>
+                </div>
+            </div>
+<div class="item">
+                <img src="Dokumentasi Ngamen/Gambar6.Png">
+                <div class="content">
+                    <div class="author">IPMAP JAKARTA</div>
+                    <div class="title">NGAMEN</div>
+                    <div class="topic">LAMPU MERA</div>
+                    <div class="des">
+                      
+                    </div>
+                    <div class="buttons">
+                        <button>SEE</button>
+                        <button>MORE</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="Dokumentasi Ngamen/Gamabar1.Png">
+                <div class="content">
+                    <div class="author">IPMAP JAKARTA</div>
+                    <div class="title">MINCE </div>
+                    <div class="topic">MURIB</div>
+                    <div class="des">
+                        
+                    </div>
+                    <div class="buttons">
+                        <button>SEE </button>
+                        <button>MORE</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="Dokumentasi Ngamen/Gambar10.Png">
+                <div class="content">
+                    <div class="author">IPMAP JAKRTA</div>
+                    <div class="title">DETEN</div>
+                    <div class="topic">MURIB</div>
+                    <div class="des">
+                        
+                    </div>
+                    <div class="buttons">
+                        <button>SEE</button>
+                        <button>MORE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- list thumnail -->
+        <div class="thumbnail">
+            <div class="item">
+                <img src="Dokumentasi Ngamen/Gambar4.Png">
+                <div class="content">
+                    <div class="title">
+                        Name Slider
+                    </div>
+                    <div class="description">
+                        Description
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="Dokumentasi Ngamen/Gambar3.Png">
+                <div class="content">
+                    <div class="title">
+                        Name Slider
+                    </div>
+                    <div class="description">
+                        Description
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="Dokumentasi Ngamen/Gambar2.Png">
+                <div class="content">
+                    <div class="title">
+                        Name Slider
+                    </div>
+                    <div class="description">
+                        Description
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="Dokumentasi Ngamen/Gamabar1.Png">
+                <div class="content">
+                    <div class="title">
+                        Name Slider
+                    </div>
+                    <div class="description">
+                        Description
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-- list item foto lagi -->
+
+        <!-- next prev -->
+
+        <div class="arrows">
+            <button id="prev"><</button>
+            <button id="next">></button>
+        </div>
+        <!-- time running -->
+        <div class="time"></div>
+    </div>
+</section>
+
+
+    <!-- Roadmap Section -->
+ <section id="timeline">
+    <header>
+      <h1 class="saya">
+        KEGIATAN ACARA PERAYAAN NATAL IPMAP SE-JAWA DAN BALI TAHUN 2024/2025
+      </h1>
+    </header>
+    <div class="timeline-container">
+      <div class="event">
+        <h2>28 DESEMBER 2024</h2>
+        <h3>Perkenalan Mahasiswa IPMAP Se-Jawa dan Bali:</h3>
+        <p>
+          Acara pembukaan dan perkenalan antar mahasiswa IPMAP dari berbagai
+          daerah untuk membangun kebersamaan.
+        </p>
+      </div>
+      <div class="event">
+        <h2>29 DESEMBER 2024</h2>
+        <h3>Seminar dan Diskusi Rohani:</h3>
+        <p>
+          Seminar dengan tema "Damai Natal sebagai Transformasi Diri" yang
+          akan dipandu oleh pembicara rohani terkenal.
+        </p>
+      </div>
+      <div class="event">
+        <h2>30 DESEMBER 2024</h2>
+        <h3>Ibadah Malam Puji-pujian:</h3>
+        <p>
+          Ibadah khusus dengan paduan suara dan puji-pujian untuk memeriahkan
+          malam Natal.
+        </p>
+      </div>
+      <div class="event">
+        <h2>31 DESEMBER 2024</h2>
+        <h3>Ibadah Penutupan dan Refleksi:</h3>
+        <p>Penjemputan Tahun Baru.</p>
+      </div>
+    </div>
+  </section>
+<!-- Registrasi -->
+<section id="Registrasi">
+       <!-- Pesan Selamat Datang -->
+    <header>
+      <div class="header-left">
+        <div class="logo-container">
+          <img src="ImageAsetNatal/Logo.png" alt="Left Image" />
+        </div>
+      </div>
+      <div class="header-center">
+        <h1>
+          REGISTRASI PESERTA NATAL IPMAP SEJAWA DAN BALI TAHUN
+          2024/2025
+        </h1>
+      </div>
+      <div class="header-right">
+        <div class="logo-container">
+          <img src="ImageAsetNatal/Logo.png" alt="Right Image" />
+        </div>
+      </div>
+    </header>
+    <div class="timeline-container">
+        <!-- Card 1 -->
+      
+  <div class="timeline-card" data-location="IPMAP JAKARTA">
+    <div class="timeline-header2">
+      <h3>2024</h3>
+      <h4>1</h4>
+    </div>
+    <div class="timeline-body">
+      <h5>IPMAP JAKARTA</h5>
+      <p>Registrasi Peserta Natal.</p>
+      <button class="rsvp-btn">RSVP Here</button>
+      <div class="form-container hidden">
+        <input type="text" placeholder="Nama" class="name-input" />
+        <input
+          type="password"
+          placeholder="Kata Sandi"
+          class="password-input"
+        />
+        <button class="submit-btn">Submit</button>
+      </div>
+    </div>
+  </div>
+  <div class="timeline-card" data-location="IPMAP JAKARTA">
+    <div class="timeline-header2">
+      <h3>2024</h3>
+      <h4>2</h4>
+    </div>
+    <div class="timeline-body">
+      <h5>IPMAP BOGOR</h5>
+      <p>Registrasi Peserta Natal.</p>
+      <button class="rsvp-btn">RSVP Here</button>
+      <div class="form-container hidden">
+        <input type="text" placeholder="Nama" class="name-input" />
+        <input
+          type="password"
+          placeholder="Kata Sandi"
+          class="password-input"
+        />
+        <button class="submit-btn">Submit</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 3 bandung -->
+  <div class="timeline-card" data-location="IPMAP JAKARTA">
+    <div class="timeline-header3">
+      <h3>2024</h3>
+      <h4>3</h4>
+    </div>
+    <div class="timeline-body">
+      <h5>IPMAP BANDUNG</h5>
+      <p>Registrasi Peserta Natal.</p>
+      <button class="rsvp-btn">RSVP Here</button>
+      <div class="form-container hidden">
+        <input type="text" placeholder="Nama" class="name-input" />
+        <input
+          type="password"
+          placeholder="Kata Sandi"
+          class="password-input"
+        />
+        <button class="submit-btn">Submit</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 4 semarang -->
+  <div class="timeline-card" data-location="IPMAP JAKARTA">
+    <div class="timeline-header4">
+      <h3>2024</h3>
+      <h4>4</h4>
+    </div>
+    <div class="timeline-body">
+      <h5>IPMAP SEMARANG</h5>
+      <p>Registrasi Peserta Natal.</p>
+      <button class="rsvp-btn">RSVP Here</button>
+      <div class="form-container hidden">
+        <input type="text" placeholder="Nama" class="name-input" />
+        <input
+          type="password"
+          placeholder="Kata Sandi"
+          class="password-input"
+        />
+        <button class="submit-btn">Submit</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 5 salatiga -->
+  <div class="timeline-card" data-location="IPMAP JAKARTA">
+    <div class="timeline-header5">
+      <h3>2024</h3>
+      <h4>5</h4>
+    </div>
+    <div class="timeline-body">
+      <h5>IPMAP SALATIGA</h5>
+      <p>Registrasi Peserta Natal.</p>
+      <button class="rsvp-btn">RSVP Here</button>
+      <div class="form-container hidden">
+        <input type="text" placeholder="Nama" class="name-input" />
+        <input
+          type="password"
+          placeholder="Kata Sandi"
+          class="password-input"
+        />
+        <button class="submit-btn">Submit</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 6 jogja-solo -->
+  <div class="timeline-card" data-location="IPMAP JAKARTA">
+    <div class="timeline-header6">
+      <h3>2024</h3>
+      <h4>6</h4>
+    </div>
+    <div class="timeline-body">
+      <h5>IPMAP JOGJA-SOLO</h5>
+      <p>Registrasi Peserta Natal.</p>
+      <button class="rsvp-btn">RSVP Here</button>
+      <div class="form-container hidden">
+        <input type="text" placeholder="Nama" class="name-input" />
+        <input
+          type="password"
+          placeholder="Kata Sandi"
+          class="password-input"
+        />
+        <button class="submit-btn">Submit</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 7 surabaya -->
+  <div class="timeline-card" data-location="IPMAP JAKARTA">
+    <div class="timeline-header7">
+      <h3>2024</h3>
+      <h4>7</h4>
+    </div>
+    <div class="timeline-body">
+      <h5>IPMAP SURABAYA</h5>
+      <p>Registrasi Peserta Natal.</p>
+      <button class="rsvp-btn">RSVP Here</button>
+      <div class="form-container hidden">
+        <input type="text" placeholder="Nama" class="name-input" />
+        <input
+          type="password"
+          placeholder="Kata Sandi"
+          class="password-input"
+        />
+        <button class="submit-btn">Submit</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 8 malang -->
+  <div class="timeline-card" data-location="IPMAP JAKARTA">
+    <div class="timeline-header8">
+      <h3>2024</h3>
+      <h4>8</h4>
+    </div>
+    <div class="timeline-body">
+      <h5>IPMAP MALANG</h5>
+      <p>Registrasi Peserta Natal</p>
+      <button class="rsvp-btn">RSVP Here</button>
+      <div class="form-container hidden">
+        <input type="text" placeholder="Nama" class="name-input" />
+        <input
+          type="password"
+          placeholder="Kata Sandi"
+          class="password-input"
+        />
+        <button class="submit-btn">Submit</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 9 bali -->
+  <div class="timeline-card" data-location="IPMAP JAKARTA">
+    <div class="timeline-header9">
+      <h3>2024</h3>
+      <h4>9</h4>
+    </div>
+    <div class="timeline-body">
+      <h5>IPMAP BALI</h5>
+      <p>Registrasi Peserta Natal.</p>
+      <button class="rsvp-btn">RSVP Here</button>
+      <div class="form-container hidden">
+        <input type="text" placeholder="Nama" class="name-input" />
+        <input
+          type="password"
+          placeholder="Kata Sandi"
+          class="password-input"
+        />
+        <button class="submit-btn">Submit</button>
+      </div>
+    </div>
+  </div>
+  <script src="9BpkwIpmap/REGISTRAS.js"></script>
+</div>
+</section>
+    <!-- Navigation Menu -->
+<nav class="menu">
+  <div class="menu__item" onclick="location.href='#home'">
+    <i class="fas fa-home"></i>
+    <span>Home</span>
+  </div>
+  <div class="menu__item" onclick="location.href='#Acara'">
+    <i class="fas fa-heart"></i>
+    <span>Acara</span>
+  </div>
+  <div class="menu__item" onclick="location.href='#schedule'">
+    <i class="fas fa-calendar-alt"></i>
+    <span>Schedule</span>
+  </div>
+  <div class="menu__item" onclick="location.href='#location'">
+    <i class="fas fa-map-marker-alt"></i>
+    <span>Location</span>
+  </div>
+  <div class="menu__item" onclick="location.href='#Image'">
+    <i class="fas fa-images"></i>
+    <span>Image</span>
+  </div>
+  <div class="menu__item" onclick="location.href='#timeline'">
+    <i class="fas fa-road"></i>
+    <span>Roadmap</span>
+  </div>
+<div class="menu__item" onclick="location.href='#Registrasi'">
+        <i class="fas fa-road"></i>
+        <span>Registrasi</span>
+      </div>
+    </nav>
+<!-- Audio Element -->
+    <audio id="backgroundMusic" autoplay loop style="display: none">
+      <source src="audio/holy Night.Mp3" type="audio/mp3" />
+      Your browser does not support the audio element.
+    </audio>
+   <!-- Salju Script -->
+<script>
+  const snowflakesContainer = document.getElementById("snowflakes");
+  const snowflakeCount = 50;
+
+  for (let i = 0; i < snowflakeCount; i++) {
+    const snowflake = document.createElement("div");
+    snowflake.classList.add("snowflake");
+    snowflake.textContent = "*";
+    snowflake.style.left = Math.random() * 100 + "vw";
+    snowflake.style.animationDuration = Math.random() * 5 + 5 + "s";
+    snowflake.style.fontSize = Math.random() * 10 + 10 + "px";
+    snowflakesContainer.appendChild(snowflake);
+  }
+</script>
+<script src="invinition.js"></script>
+<script src="slide.js"></script>
+  </body>
+</html>
